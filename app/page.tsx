@@ -13,6 +13,12 @@ interface Product {
   upvotes: number;
   tags: string[];
   image: string;
+  website: string;
+  makers: {
+    name: string;
+    image: string;
+  }[];
+  gallery: string[];
 }
 
 export default function Component() {
@@ -21,12 +27,115 @@ export default function Component() {
 
   const products: Product[] = [
     {
+      name: "Mozalink",
+      desc: "Hire people - Make your project more fast - Get paid",
+      upvotes: 500,
+      tags: ["Productivity", "People", "Hire", "Task Management"],
+      image:
+        "https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-1/393585186_6824510940961826_6505150162200080149_n.jpg?stp=dst-jpg_s200x200&_nc_cat=104&ccb=1-7&_nc_sid=f4b9fd&_nc_eui2=AeFVo7ymrUYOQPXLd6O4ooSwXQn0KSIiSO1dCfQpIiJI7a2fTE72h42OLqgaDSUWjMiYHFTvBMlNIelaqUgZb98_&_nc_ohc=qnorALkq9X0Q7kNvgHu8hdS&_nc_ht=scontent-fra3-2.xx&_nc_gid=ARZW7Ssj68szzfZpungeseB&oh=00_AYAQTcJXKD-6QJ9K7ML_ffekr1Iukznc1DUt9EIY0Zkxzg&oe=66FB4D1A",
+      website: "https://mozalink.vercel.app",
+      makers: [
+        {
+          name: "Delfim Celestino",
+          image: "https://github.com/denycelestino.png",
+        },
+        {
+          name: "Frasio Joao",
+          image: "https://github.com/eufrasiojoao.png",
+        },
+        {
+          name: "Lucas Fulano",
+          image: "https://github.com/waplaf.png",
+        },
+      ],
+      gallery: [
+        "https://delfim.vercel.app/_next/image?url=%2Ftrafegotop.jpg&w=3840&q=75",
+        "https://delfim.vercel.app/_next/image?url=%2Fbarn.jpg&w=3840&q=75",
+        "https://delfim.vercel.app/_next/image?url=%2Fmozalink.jpeg&w=3840&q=75",
+      ],
+    },
+    {
+      name: "Fluent Academy",
+      desc: "Leaern English - Be fluent",
+      upvotes: 432,
+      tags: ["School", "Platform", "English"],
+      image: "https://fluentacademy.pro/logo-t.png",
+      website: "https://www.fluentacademy.pro",
+      makers: [
+        {
+          name: "Delfim Celestino",
+          image: "https://github.com/denycelestino.png",
+        },
+        {
+          name: "Frasio Joao",
+          image: "https://github.com/eufrasiojoao.png",
+        },
+        {
+          name: "Lucas Fulano",
+          image: "https://github.com/waplaf.png",
+        },
+      ],
+      gallery: [
+        "https://fluentacademy.pro/assets/img-Bif2O3Kk.jpg",
+        "https://delfim.vercel.app/_next/image?url=%2Fbarn.jpg&w=3840&q=75",
+        "https://delfim.vercel.app/_next/image?url=%2Fmozalink.jpeg&w=3840&q=75",
+      ],
+    },
+    {
+      name: "Kartas pro",
+      desc: "Use essa poderosa ferramenta para criar cartas e CV's incriveis",
+      upvotes: 432,
+      tags: ["School", "Platform", "Cv"],
+      image: "https://kartas.pro/logo/logo2.png",
+      website: "https://www.kartas.pro",
+      makers: [
+        {
+          name: "Delfim Celestino",
+          image: "https://github.com/denycelestino.png",
+        },
+        {
+          name: "Frasio Joao",
+          image: "https://github.com/eufrasiojoao.png",
+        },
+        {
+          name: "Lucas Fulano",
+          image: "https://github.com/waplaf.png",
+        },
+      ],
+      gallery: [
+        "https://fluentacademy.pro/assets/img-Bif2O3Kk.jpg",
+        "https://kartas.pro/logo/logo2.png",
+        "https://delfim.vercel.app/_next/image?url=%2Fmozalink.jpeg&w=3840&q=75",
+      ],
+    },
+    {
       name: "BeforeSunset AI 2.0",
       desc: "Personalized AI daily planning that suits your life",
       upvotes: 432,
       tags: ["Productivity", "Task Management", "Artificial Intelligence"],
       image:
         "https://ph-files.imgix.net/47683e62-e763-4ce5-afc9-424c5813c5f4.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&dpr=2",
+      website: "https://www.delfim.vercel.app",
+
+      makers: [
+        {
+          name: "Delfim Celestino",
+          image: "https://github.com/denycelestino.png",
+        },
+        {
+          name: "Frasio Joao",
+          image: "https://github.com/eufrasiojoao.png",
+        },
+        {
+          name: "Lucas Fulano",
+          image: "https://github.com/waplaf.png",
+        },
+      ],
+      gallery: [
+        "https://delfim.vercel.app/_next/image?url=%2Ftrafegotop.jpg&w=3840&q=75",
+        "https://delfim.vercel.app/_next/image?url=%2Fbarn.jpg&w=3840&q=75",
+        "https://delfim.vercel.app/_next/image?url=%2Fmozalink.jpeg&w=3840&q=75",
+      ],
     },
     {
       name: "daily.dev Squads",
@@ -35,7 +144,29 @@ export default function Component() {
       tags: ["Social Media", "Developer Tools", "GitHub"],
       image:
         "https://ph-files.imgix.net/47683e62-e763-4ce5-afc9-424c5813c5f4.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&dpr=2",
+      website: "https://www.delfim.vercel.app",
+
+      makers: [
+        {
+          name: "Delfim Celestino",
+          image: "https://github.com/denycelestino.png",
+        },
+        {
+          name: "Frasio Joao",
+          image: "https://github.com/eufrasiojoao.png",
+        },
+        {
+          name: "Lucas Fulano",
+          image: "https://github.com/waplaf.png",
+        },
+      ],
+      gallery: [
+        "https://delfim.vercel.app/_next/image?url=%2Ftrafegotop.jpg&w=3840&q=75",
+        "https://delfim.vercel.app/_next/image?url=%2Fbarn.jpg&w=3840&q=75",
+        "https://delfim.vercel.app/_next/image?url=%2Fmozalink.jpeg&w=3840&q=75",
+      ],
     },
+
     {
       name: "Neolocus",
       desc: "AI Rendering Playground for Designers",
@@ -43,6 +174,26 @@ export default function Component() {
       tags: ["Design Tools", "Artificial Intelligence"],
       image:
         "https://ph-files.imgix.net/8e8e1714-81fb-41ec-aee2-b9a00664c7d8.svg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&dpr=2",
+      website: "https://www.delfim.vercel.app",
+      makers: [
+        {
+          name: "Delfim Celestino",
+          image: "https://github.com/denycelestino.png",
+        },
+        {
+          name: "Frasio Joao",
+          image: "https://github.com/eufrasiojoao.png",
+        },
+        {
+          name: "Lucas Fulano",
+          image: "https://github.com/waplaf.png",
+        },
+      ],
+      gallery: [
+        "https://delfim.vercel.app/_next/image?url=%2Ftrafegotop.jpg&w=3840&q=75",
+        "https://delfim.vercel.app/_next/image?url=%2Fbarn.jpg&w=3840&q=75",
+        "https://delfim.vercel.app/_next/image?url=%2Fmozalink.jpeg&w=3840&q=75",
+      ],
     },
     {
       name: "Vanta",
@@ -51,6 +202,26 @@ export default function Component() {
       tags: ["SaaS", "Privacy", "Developer Tools"],
       image:
         "https://ph-files.imgix.net/47683e62-e763-4ce5-afc9-424c5813c5f4.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&dpr=2",
+      website: "https://www.delfim.vercel.app",
+      makers: [
+        {
+          name: "Delfim Celestino",
+          image: "https://github.com/denycelestino.png",
+        },
+        {
+          name: "Frasio Joao",
+          image: "https://github.com/eufrasiojoao.png",
+        },
+        {
+          name: "Lucas Fulano",
+          image: "https://github.com/waplaf.png",
+        },
+      ],
+      gallery: [
+        "https://delfim.vercel.app/_next/image?url=%2Ftrafegotop.jpg&w=3840&q=75",
+        "https://delfim.vercel.app/_next/image?url=%2Fbarn.jpg&w=3840&q=75",
+        "https://delfim.vercel.app/_next/image?url=%2Fmozalink.jpeg&w=3840&q=75",
+      ],
     },
     {
       name: "Olly 2.0",
@@ -59,6 +230,26 @@ export default function Component() {
       tags: ["Chrome Extensions", "Social Media"],
       image:
         "https://ph-files.imgix.net/dbe86427-675d-414c-89be-b3b0f310d679.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=48&h=48&fit=crop&dpr=2",
+      website: "https://www.delfim.vercel.app",
+      makers: [
+        {
+          name: "Delfim Celestino",
+          image: "https://github.com/denycelestino.png",
+        },
+        {
+          name: "Frasio Joao",
+          image: "https://github.com/eufrasiojoao.png",
+        },
+        {
+          name: "Lucas Fulano",
+          image: "https://github.com/waplaf.png",
+        },
+      ],
+      gallery: [
+        "https://delfim.vercel.app/_next/image?url=%2Ftrafegotop.jpg&w=3840&q=75",
+        "https://delfim.vercel.app/_next/image?url=%2Fbarn.jpg&w=3840&q=75",
+        "https://delfim.vercel.app/_next/image?url=%2Fmozalink.jpeg&w=3840&q=75",
+      ],
     },
   ];
 
@@ -186,11 +377,13 @@ export default function Component() {
             </div>
             <div className="p-6">
               <div className="flex items-start space-x-4 mb-6">
-                <img
-                  src={selectedProduct.image}
-                  alt={selectedProduct.name}
-                  className="w-16 h-16 rounded-lg"
-                />
+                <div className="w-16 h-16  rounded-lg">
+                  <img
+                    src={selectedProduct.image}
+                    alt={selectedProduct.name}
+                    className="w-full h-full object-contain rounded-lg"
+                  />
+                </div>
                 <div>
                   <h3 className="text-xl font-semibold">
                     {selectedProduct.name}
@@ -211,8 +404,14 @@ export default function Component() {
                 </div>
               </div>
               <div className="grid grid-cols-3 gap-4 mb-6">
-                {[1, 2, 3].map((_, index) => (
-                  <div key={index} className="bg-muted h-40 rounded-lg"></div>
+                {selectedProduct.gallery.map((project, index) => (
+                  <div key={index} className="bg-muted h-40 rounded-lg">
+                    <img
+                      src={project}
+                      alt={selectedProduct.name}
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
                 ))}
               </div>
               <div className="mb-6">
@@ -227,11 +426,11 @@ export default function Component() {
               <div>
                 <h4 className="text-sm font-semibold mb-2">Makers</h4>
                 <div className="flex space-x-2">
-                  {[1, 2, 3].map((_, index) => (
+                  {selectedProduct.makers.map((colabrator, index) => (
                     <Link key={index} href={"/profile"}>
                       <img
-                        src={`https://i.pravatar.cc/40?img=${index}`}
-                        alt={`Maker ${index + 1}`}
+                        src={colabrator.image}
+                        alt={`Colaborator - ${colabrator.name} - ${index + 1}`}
                         className="w-10 h-10 rounded-full"
                       />
                     </Link>
@@ -240,8 +439,10 @@ export default function Component() {
               </div>
             </div>
             <div className="p-4 bg-muted flex justify-between items-center">
-              <Button variant="outline" size="sm">
-                Visit Website
+              <Button asChild variant="outline" size="sm">
+                <Link target="_blank" href={selectedProduct.website}>
+                  Visit Website
+                </Link>
               </Button>
               <div className="flex items-center space-x-4">
                 <Button variant="ghost" size="sm" className="flex items-center">

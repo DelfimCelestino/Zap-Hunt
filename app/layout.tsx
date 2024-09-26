@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Zip Hunt",
+  title: "Zap Hunt",
   description: "O que os devs fazem na web?",
 };
 
