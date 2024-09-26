@@ -6,19 +6,19 @@ import Header from "@/components/header";
 
 export default function ProfilePage() {
   return (
-    <div className="min-h-screen bg-background font-sans">
+    <div>
       <Header />
 
       <div className="bg-gradient-to-r from-pink-100 via-green-100 to-yellow-100 dark:bg-gradient-to-r dark:from-violet-600 dark:to-indigo-600 p-8">
-        <div className="max-w-4xl mx-auto">
+        <div className="wrapper">
           <div className="flex items-start space-x-6">
             <img
               src="https://github.com/denycelestino.png"
               alt="Delfim Celestino"
-              className="w-24 h-24 rounded-full"
+              className="w-16 h-16 lg:w-24 lg:h-24 rounded-full"
             />
             <div>
-              <h1 className="text-3xl font-bold">
+              <h1 className="text-lg lg:text-3xl font-bold">
                 Delfim Celestino A. Pastola{" "}
               </h1>
               <p className="text-foreground/60">
@@ -49,8 +49,8 @@ export default function ProfilePage() {
                 />
               </div>
               <Button
-                variant={"ghost"}
-                className="mt-4 flex items-center gap-2 border"
+                variant={"outline"}
+                className="mt-4 flex items-center gap-2 border w-full"
               >
                 Follow <ArrowUpLeftIcon className="w-4 h-4" />
               </Button>
@@ -59,7 +59,7 @@ export default function ProfilePage() {
         </div>
       </div>
 
-      <main className="max-w-4xl mx-auto mt-8">
+      <main className="wrapper">
         <Tabs defaultValue="about">
           <TabsList>
             <TabsTrigger value="about">About</TabsTrigger>
