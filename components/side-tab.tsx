@@ -9,7 +9,7 @@ const SideTab = () => {
           <h4 className="text-sm font-semibold">Video conferencing &gt;</h4>
           <p className="text-xs text-muted-foreground mt-1">
             Before Product Hunt, I spent several years building a competitor to
-            Zoom (not successful, but quite rewarding). I'm left with...
+            Zoom (not successful, but quite rewarding). I m left with...
           </p>
           <div className="flex items-center mt-2">
             <img
@@ -23,7 +23,7 @@ const SideTab = () => {
         <div>
           <h4 className="text-sm font-semibold">Hiring software &gt;</h4>
           <p className="text-xs text-muted-foreground mt-1">
-            If you've run hiring or conducted interviews at your company, you
+            If you ve run hiring or conducted interviews at your company, you
             likely used an Applicant Tracking System (ATS). Simply put...
           </p>
           <div className="flex items-center mt-2">

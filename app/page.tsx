@@ -3,9 +3,9 @@
 import Header from "@/components/header";
 import SideTab from "@/components/side-tab";
 import { Button } from "@/components/ui/button";
-import { ChevronUp, X, Search, ChevronRight } from "lucide-react";
+import { ChevronUp, X } from "lucide-react";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 interface Product {
   name: string;
@@ -228,9 +228,8 @@ export default function Component() {
                 <h4 className="text-sm font-semibold mb-2">Makers</h4>
                 <div className="flex space-x-2">
                   {[1, 2, 3].map((_, index) => (
-                    <Link href={"/profile"}>
+                    <Link key={index} href={"/profile"}>
                       <img
-                        key={index}
                         src={`https://i.pravatar.cc/40?img=${index}`}
                         alt={`Maker ${index + 1}`}
                         className="w-10 h-10 rounded-full"
