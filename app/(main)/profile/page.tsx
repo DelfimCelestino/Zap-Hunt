@@ -129,7 +129,6 @@ export default function ProfilePage() {
               <span className="ml-2">January 28th, 2015</span>
             </div>
           </TabsContent>
-          {/* Add content for other tabs as needed */}
         </Tabs>
       </main>
     </div>

@@ -1,67 +1,61 @@
-\*\*
+# Zap Hunt
 
-## Zap Hunt - Product Discovery Platform
+**Zap Hunt** é uma plataforma destinada a desenvolvedores de Moçambique para descobrir, compartilhar e promover produtos inovadores e soluções tecnológicas. Seja você um desenvolvedor, designer ou criador de startups, **Zap Hunt** oferece um espaço para destacar suas criações e se conectar com a comunidade local.
 
-**Zap Hunt** é uma plataforma para descobrir e lançar novos produtos de tecnologia. Este projeto é uma interface simples que lista produtos populares, permite navegar entre eles e exibe detalhes sobre cada um em um modal.
+## Funcionalidades
 
-**Tecnologias Utilizadas**
+- **Exploração de Produtos**: Descubra projetos inovadores criados por desenvolvedores moçambicanos.
+- **Upvotes**: Vote nos produtos que você acha mais interessantes e úteis.
+- **Tags**: Filtre produtos por tags relevantes como "Produtividade", "Inteligência Artificial", "Ferramentas de Desenvolvedor" e muito mais.
+- **Galeria de Imagens**: Veja capturas de tela e fotos de demonstração dos produtos.
+- **Makers**: Conheça as pessoas por trás dos produtos, com perfis de cada desenvolvedor.
+- **Integração com Websites**: Acesse diretamente o site dos produtos para mais informações.
 
-**React** - Biblioteca para construir interfaces de usuário.
+## Produtos
 
-**Next.js** - Framework React com renderização do lado do servidor e rotas baseadas em arquivos.
+Alguns produtos apresentados incluem:
 
-**Lucide-react** - Pacote de ícones para React.
+1.  **Mozalink**
 
-**Tailwind CSS** - Framework de CSS utilitário para estilização.
+    - **Descrição**: Contrate pessoas, acelere seu projeto e receba pagamentos.
+    - **Tags**: Produtividade, Contratação, Gestão de Tarefas
+    - **Website**: [Mozalink](https://mozalink.vercel.app)
+    - **Makers**: Delfim Celestino, Frasio Joao, Lucas Fulano
 
-**TypeScript** - Suporte a tipagem estática no JavaScript.
+2.  **Fluent Academy**
 
-**Estrutura de Componentes**
+    - **Descrição**: Aprenda inglês de forma eficaz e torne-se fluente.
+    - **Tags**: Educação, Plataforma, Inglês
+    - **Website**: [Fluent Academy](https://www.fluentacademy.pro)
+    - **Makers**: Delfim Celestino, Frasio Joao, Lucas Fulano
 
-**Header**: Componente que representa o cabeçalho da aplicação.
+3.  **Kartas Pro**
 
-**SideTab**: Um painel lateral, com navegação complementar.
+    - **Descrição**: Ferramenta poderosa para criação de cartas e CVs.
+    - **Tags**: Plataforma, CV, Gestão
+    - **Website**: [Kartas Pro](https://www.kartas.pro)
 
-**Button**: Um botão reutilizável importado de @/components/ui/button.
+...e muitos outros!
 
-**Funcionalidades**
+## Como Contribuir
 
-**Lista de Produtos:** Um array de objetos com dados como nome, descrição, upvotes, tags e uma imagem de cada produto.
+Contribuições são bem-vindas! Para contribuir:
 
-**Navegação entre Produtos:** Modal para exibir informações detalhadas de um produto selecionado, com botões de navegação para o próximo e o anterior.
+1.  Faça um fork do repositório.
+2.  Crie uma nova branch: `git checkout -b minha-feature`.
+3.  Faça suas alterações e comite-as: `git commit -m 'Adicionei minha feature'`.
+4.  Envie para a branch principal: `git push origin minha-feature`.
+5.  Abra um pull request para revisarmos suas alterações.
 
-**Modal de Produto:** Mostra os detalhes de um produto, incluindo a imagem, descrição e tags.
+## Colaboradores
 
-**Upvotes e Compartilhamento:** Cada produto permite upvotes, e há botões para compartilhar.
+- Delfim Celestino
+- Richard T. Junior
+- Jabir Mussa
+- Iassine Iahaia
+- Lucas Alberto
+- Eufrasio Joao
 
-**Como Executar Localmente**
+## Licença
 
-**Clone este repositório.**
-
-```bash
-git clone https://github.com/delfimcelestino/zap-hunt.git
-```
-
-**Instale as dependências.**
-
-```bash
-npm install
-```
-
-**Execute o projeto.**
-
-```bash
-npm run dev
-```
-
-Abra http://localhost:3000 no seu navegador para visualizar a aplicação.
-
-**O que é use client?**
-
-A diretiva use client no Next.js 13 e posterior indica que um arquivo ou um componente React deve ser renderizado no cliente. Por padrão, o Next.js utiliza renderização no servidor, mas em casos como manipulação de estado local ou hooks como useState e useEffect, o componente precisa ser renderizado no cliente. Essa diretiva ajuda a diferenciar entre componentes do lado do servidor e do lado do cliente.
-
-No contexto deste projeto, o componente Component usa `useState` e `useEffect`, então é necessário que ele seja renderizado no lado do cliente. Por isso, pode ser necessário adicionar use client no início do arquivo para evitar problemas de compatibilidade com renderização do lado do servidor.
-
-**Licença**
-
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.Zap Hunt - Product Discovery Platform
+Este projeto está licenciado sob a Licença MIT.
