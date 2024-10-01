@@ -108,3 +108,29 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+.hero .wrapper{
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  height: 400px;
+}
+
+.wrapper .text{
+  max-width: 50%;
+}
+.wrapper .image{
+  width: 50%;
+  /* background-color: black; */
+  height: 100%;
+}
+
+.wrapper .text h1{
+  font-size: 80px;
+  line-height: 1;
+  padding-bottom: 40px;
+}
+.buttons{
+  display: flex;
+  gap: 20px;
+}

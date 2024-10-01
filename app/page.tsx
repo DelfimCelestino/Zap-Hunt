@@ -7,6 +7,7 @@ import { ChevronUp, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { products, Product } from "./utils/db";
+import Hero from "@/components/hero";
 
 export default function Component() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
@@ -33,6 +34,7 @@ export default function Component() {
   return (
     <>
       <Header />
+      <Hero />
       <main className="wrapper">
         <div className="p-4 rounded-lg mb-6 relative">
           <button className="absolute top-2 right-2 text-gray-400 hover:text-gray-600">
@@ -106,7 +108,6 @@ export default function Component() {
           <SideTab />
         </div>
       </main>
-
       {selectedProduct && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
           <div className="bg-background w-full max-w-4xl rounded-lg shadow-lg overflow-hidden">
