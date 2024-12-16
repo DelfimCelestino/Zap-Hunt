@@ -14,12 +14,12 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    name: "Mozalink",
+    name: "Findizi",
     desc: "Hire people - Make your project more fast - Get paid",
     upvotes: 500,
     tags: ["Productivity", "People", "Hire", "Task Management"],
     image:
-      "https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-1/393585186_6824510940961826_6505150162200080149_n.jpg?stp=dst-jpg_s200x200&_nc_cat=104&ccb=1-7&_nc_sid=f4b9fd&_nc_eui2=AeFVo7ymrUYOQPXLd6O4ooSwXQn0KSIiSO1dCfQpIiJI7a2fTE72h42OLqgaDSUWjMiYHFTvBMlNIelaqUgZb98_&_nc_ohc=qnorALkq9X0Q7kNvgHu8hdS&_nc_ht=scontent-fra3-2.xx&_nc_gid=ARZW7Ssj68szzfZpungeseB&oh=00_AYAQTcJXKD-6QJ9K7ML_ffekr1Iukznc1DUt9EIY0Zkxzg&oe=66FB4D1A",
+      "https://delfim.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffindizi-image1.49f8fc0f.jpg&w=2048&q=75",
     website: "https://mozalink.vercel.app",
     makers: [
       {
@@ -36,9 +36,9 @@ export const products: Product[] = [
       },
     ],
     gallery: [
-      "https://delfim.vercel.app/_next/image?url=%2Ftrafegotop.jpg&w=3840&q=75",
-      "https://delfim.vercel.app/_next/image?url=%2Fbarn.jpg&w=3840&q=75",
-      "https://delfim.vercel.app/_next/image?url=%2Fmozalink.jpeg&w=3840&q=75",
+      "https://delfim.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffindizi-image1.49f8fc0f.jpg&w=2048&q=75",
+      "https://delfim.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffindizi-image2.67ada552.jpg&w=2048&q=75",
+      "https://delfim.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffindizi.1dfb5fb5.jpg&w=2048&q=75",
     ],
   },
   {
